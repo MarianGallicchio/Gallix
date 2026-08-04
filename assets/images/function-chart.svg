@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 720" width="900" height="720" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">
+  <defs>
+    <linearGradient id="grad-primary" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2563eb;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grad-secondary" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.12"/>
+    </filter>
+    <filter id="shadow-sm" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="720" fill="#ffffff"/>
+
+  <!-- Title -->
+  <text x="450" y="48" text-anchor="middle" font-size="28" font-weight="700" fill="#111827">Funciones de la App</text>
+  <text x="450" y="76" text-anchor="middle" font-size="15" fill="#6b7280">myComposeApp - Estructura de pantallas y módulos</text>
+
+  <!-- Central App node -->
+  <g filter="url(#shadow)">
+    <rect x="375" y="130" width="150" height="70" rx="16" fill="url(#grad-primary)"/>
+    <text x="450" y="175" text-anchor="middle" font-size="18" font-weight="600" fill="#ffffff">App (Entry)</text>
+  </g>
+
+  <!-- Auth group (top) -->
+  <g filter="url(#shadow)">
+    <rect x="375" y="50" width="150" height="60" rx="14" fill="#f3f4f6" stroke="#d1d5db"/>
+    <text x="450" y="88" text-anchor="middle" font-size="15" font-weight="600" fill="#374151">Auth</text>
+    <text x="450" y="106" text-anchor="middle" font-size="12" fill="#6b7280">Login / Registro</text>
+  </g>
+
+  <!-- Home (center-right) -->
+  <g filter="url(#shadow)">
+    <rect x="560" y="140" width="160" height="70" rx="16" fill="url(#grad-secondary)" stroke="none"/>
+    <text x="640" y="185" text-anchor="middle" font-size="16" font-weight="600" fill="#ffffff">Home</text>
+    <text x="640" y="202" text-anchor="middle" font-size="11" fill="#f1f1f1">Dashboard principal</text>
+  </g>
+
+  <!-- Core Feature Modules (left side, vertical) -->
+  <!-- Alarm -->
+  <g filter="url(#shadow-sm)">
+    <rect x="60" y="120" width="130" height="64" rx="14" fill="#f3f4f6" stroke="#e5e7eb"/>
+    <rect x="60" y="120" width="130" height="64" rx="14" fill="#ffffff" opacity="0.7"/>
+    <text x="125" y="148" text-anchor="middle" font-size="15" font-weight="600" fill="#111827">⏰ Alarm</text>
+    <text x="125" y="166" text-anchor="middle" font-size="11" fill="#6b7280">Alarmas personalizadas</text>
+  </g>
+
+  <!-- Daily Help -->
+  <g filter="url(#shadow-sm)">
+    <rect x="60" y="200" width="130" height="64" rx="14" stroke="#e5e7eb"/>
+    <rect x="61" y="201" width="128" height="62" rx="13" fill="#ffffff" opacity="0.9" stroke="#d1d5db"/>
+    <text x="125" y="230" text-anchor="middle" font-size="15" font-weight="600" fill="#111827">📋 Daily Help</text>
+    <text x="125" y="248" text-anchor="middle" font-size="11" fill="#6b7280">Ayuda diaria</text>
+  </g>
+
+  <!-- Calendar -->
+  <g filter="url(#shadow-sm)">
+    <rect x="60" y="280" width="130" height="64" rx="14" stroke="#e5e7eb"/>
+    <rect x="61" y="281" width="128" height="62" rx="13" fill="#ffffff" opacity="0.9" stroke="#d1d5db"/>
+    <text x="125" y="310" text-anchor="middle" font-size="15" font-weight="600" fill="#111827">📅 Calendar</text>
+    <text x="125" y="328" text-anchor="middle" font-size="11" fill="#6b7280">Calendario de tareas</text>
+  </g>
+
+  <!-- Pet (feature highlight) -->
+  <g filter="url(#shadow)">
+    <rect x="60" y="360" width="130" height="64" rx="14" fill="url(#grad-primary)"/>
+    <text x="125" y="390" text-anchor="middle" font-size="15" font-weight="600" fill="#ffffff">🐾 Pet</text>
+    <text x="125" y="408" text-anchor="middle" font-size="11" fill="#e1e1ff">Mascota virtual gamificada</text>
+  </g>
+
+  <!-- Night Summary -->
+  <g filter="url(#shadow-sm)">
+    <rect x="60" y="440" width="130" height="64" rx="14" stroke="#e5e7eb"/>
+    <rect x="61" y="441" width="128" height="62" rx="13" fill="#ffffff" opacity="0.9" stroke="#d1d5db"/>
+    <text x="125" y="469" text-anchor="middle" font-size="15" font-weight="600" fill="#111827">🌙 Night Summary</text>
+    <text x="125" y="487" text-anchor="middle" font-size="11" fill="#6b7280">Resumen nocturno</text>
+  </g>
+
+  <!-- Wellness group (right side, vertical) -->
+  <!-- Diet -->
+  <g filter="url(#shadow-sm)">
+    <rect x="710" y="120" width="130" height="64" rx="14" stroke="#e5e7eb"/>
+    <rect x="711" y="121" width="128" height="62" rx="13" fill="#ffffff" opacity="0.9" stroke="#d1d5db"/>
+    <text x="775" y="148" text-anchor="middle" font-size="15" font-weight="600" fill="#111827">🥗 Diet</text>
+    <text x="775" y="166" text-anchor="middle" font-size="11" fill="#6b7280">Planificación de dieta</text>
+  </g>
+
+  <!-- Exercise -->
+  <g filter="url(#shadow-sm)">
+    <rect x="710" y="200" width="130" height="64" rx="14" stroke="#e5e7eb"/>
+    <rect x="711" y="201" width="128" height="62" rx="13" fill="#ffffff" opacity="0.9" stroke="#d1d5db"/>
+    <text x="775" y="230" text-anchor="middle" font-size="15" font-weight="600" fill="#111827">🏋️ Exercise</text>
+    <text x="775" y="248" text-anchor="middle" font-size="11" fill="#6b7280">Ejercicios guiados</text>
+  </g>
+
+  <!-- Focus -->
+  <g filter="url(#shadow-sm)">
+    <rect x="710" y="280" width="130" height="64" rx="14" stroke="#e5e7eb"/>
+    <rect x="711" y="281" width="128" height="62" rx="13" fill="#ffffff" opacity="0.9" stroke="#d1d5db"/>
+    <text x="775" y="310" text-anchor="middle" font-size="15" font-weight="600" fill="#111827">🎯 Focus</text>
+    <text x="775" y="328" text-anchor="middle" font-size="11" fill="#6b7280">Bloques de enfoque</text>
+  </g>
+
+  <!-- Progress -->
+  <g filter="url(#shadow)">
+    <rect x="710" y="360" width="130" height="64" rx="14" fill="url(#grad-secondary)"/>
+    <text x="775" y="390" text-anchor="middle" font-size="15" font-weight="600" color="#ffffff">📊 Progress</text>
+    <text x="775" y="408" text-anchor="middle" font-size="11" fill="#e1e1ff">Tracking de hábitos</text>
+  </g>
+
+  <!-- Profile -->
+  <g filter="url(#shadow-sm)">
+    <rect x="710" y="440" width="130" height="64" rx="14" stroke="#e5e7eb"/>
+    <rect x="711" y="441" width="128" height="62" rx="13" fill="#ffffff" opacity="0.9" stroke="#d1d5db"/>
+    <text x="775" y="469" text-anchor="middle" font-size="15" font-weight="600" fill="#111827">👤 Profile</text>
+    <text x="775" y="487" text-anchor="middle" font-size="11" fill="#6b7280">Perfil de usuario</text>
+  </g>
+
+  <!-- Support group (right, bottom) -->
+  <!-- Settings -->
+  <g filter="url(#shadow-sm)">
+    <rect x="560" y="460" width="130" height="64" rx="14" stroke="#e5e7eb"/>
+    <rect x="561" y="461" width="128" height="62" rx="13" fill="#ffffff" opacity="0.9" stroke="#d1d5db"/>
+    <text x="625" y="489" text-anchor="middle" font-size="15" font-weight="600" fill="#111827">⚙️ Settings</text>
+    <text x="625" y="507" text-anchor="middle" font-size="11" fill="#6b7280">Configuración</text>
+  </g>
+
+  <!-- Premium -->
+  <g filter="url(#shadow-sm)">
+    <rect x="410" y="460" width="120" height="64" rx="14" stroke="#e5e7eb"/>
+    <rect x="411" y="461" width="118" height="62" rx="13" fill="#ffffff" opacity="0.9" stroke="#d1d5db"/>
+    <text x="470" y="489" text-anchor="middle" font-size="14" font-weight="600" fill="#111827">💎 Premium</text>
+    <text x="470" y="507" text-anchor="middle" font-size="11" fill="#6b7280">Características Pro</text>
+  </g>
+
+  <!-- Legal -->
+  <g filter="url(#shadow-sm)">
+    <rect x="260" y="460" width="120" height="64" rx="14" stroke="#e5e7eb"/>
+    <rect x="261" y="461" width="118" height="62" rx="13" fill="#ffffff" opacity="0.9" stroke="#d1d5db"/>
+    <text x="320" y="489" text-anchor="middle" font-size="14" font-weight="600" fill="#111827">⚖️ Legal</text>
+    <text x="320" y="507" text-anchor="middle" font-size="11" fill="#6b7280">Términos y privacidad</text>
+  </g>
+
+  <!-- Community -->
+  <g filter="url(#shadow-sm)">
+    <rect x="120" y="460" width="120" height="64" rx="14" stroke="#e5e7eb"/>
+    <rect x="121" y="461" width="118" height="62" rx="13" fill="#ffffff" opacity="0.9" stroke="#d1d5db"/>
+    <text x="180" y="489" text-anchor="middle" font-size="14" font-weight="600" fill="#111827">👥 Community</text>
+    <text x="180" y="507" text-anchor="middle" font-size="11" fill="#6b7280">Comunidad de usuarios</text>
+  </g>
+
+  <!-- Navigation arrows from App to modules -->
+  <!-- Auth -->
+  <path d="M450 130 L450 110" stroke="#9ca3af" stroke-width="2" marker-end="url(#arrow-gray)"/>
+  <path d="M460 110 L450 110 L450 100" fill="#9ca3af"/>
+
+  <!-- Home -->
+  <path d="M450 165 Q500 160 560 175" stroke="#a78bfa" stroke-width="2.5" fill="none" marker-end="url(#arrow-purple)"/>
+
+  <!-- Left modules -->
+  <path d="M450 155 Q400 140 430 152" stroke="#9ca3af" stroke-width="2" fill="none" marker-end="url(#arrow-gray)"/>
+  <path d="M450 165 Q400 200 190 152" stroke="#9ca3af" stroke-width="2" fill="none" marker-end="url(#arrow-gray)"/>
+  <path d="M450 165 Q380 250 190 232" stroke="#9ca3af" stroke-width="2" fill="none" marker-end="url(#arrow-gray)"/>
+  <path d="M450 165 Q350 320 190 248" stroke="#9ca3af" stroke-width="2" fill="none" marker-end="url(#arrow-gray)"/>
+  <path d="M450 170 Q350 400 195 390" stroke="#60a5fa" stroke-width="2.5" fill="none" marker-end="url(#arrow-blue)"/>
+  <path d="M450 170 Q360 480 190 450" stroke="#9ca3af" stroke-width="2" fill="none" marker-end="url(#arrow-gray)"/>
+
+  <!-- Right modules -->
+  <path d="M450 165 Q480 140 560 152" stroke="#9ca3af" stroke-width="2" fill="none" marker-end="url(#arrow-gray)"/>
+  <path d="M450 165 Q490 200 740 152" stroke="#9ca3af" stroke-width="2" fill="none" marker-end="url(#arrow-gray)"/>
+  <path d="M450 165 Q490 250 740 232" stroke="#9ca3af" stroke-width="2" fill="none" marker-end="url(#arrow-gray)"/>
+  <path d="M450 165 Q490 320 740 248" stroke="#9ca3af" stroke-width="2" fill="none" marker-end="url(#arrow-gray)"/>
+  <path d="M450 170 Q490 400 740 390" stroke="#a78bfa" stroke-width="2.5" fill="none" marker-end="url(#arrow-purple)"/>
+  <path d="M450 170 Q490 480 740 450" stroke="#9ca3af" stroke-width="2" fill="none" marker-end="url(#arrow-gray)"/>
+
+  <!-- Bottom modules from Home -->
+  <path d="M640 210 Q640 380 620 492" stroke="#9ca3af" stroke-width="2" fill="none" marker-end="url(#arrow-gray)"/>
+  <path d="M640 210 Q610 420 560 492" stroke="#9ca3af" stroke-width="2" fill="none" marker-end="url(#arrow-gray)"/>
+  <path d="M640 210 Q600 440 470 492" stroke="#9ca3af" stroke-width="2" fill="none" marker-end="url(#arrow-gray)"/>
+  <path d="M640 210 Q550 440 380 492" stroke="#9ca3af" stroke-width="2" fill="none" marker-end="url(#arrow-gray)"/>
+
+  <!-- Legend -->
+  <g transform="translate(50, 600)">
+    <rect x="0" y="0" width="24" height="4" rx="2" fill="#60a5fb"/>
+    <text x="32" y="12" font-size="12" fill="#6b7280">Navegación principal</text>
+    <rect x="180" y="0" width="24" height="4" rx="2" fill="#a78bfa"/>
+    <text x="212" y="12" font-size="12" fill="#6b7280">Funcionalidad destacada</text>
+  </g>
+
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrow-gray" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L9,3 L0,6 Z" fill="#9ca3af"/>
+    </marker>
+    <marker id="arrow-blue" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L9,3 L0,6 Z" fill="#60a5fb"/>
+    </marker>
+    <marker id="arrow-purple" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L9,3 L0,6 Z" fill="#a78bfa"/>
+    </marker>
+  </defs>
+</svg>
