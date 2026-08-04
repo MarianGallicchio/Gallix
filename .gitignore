@@ -1,0 +1,40 @@
+# Gradle
+.gradle/
+build/
+*/build/
+!*/src/main/build/
+!*/src/androidTest/build/
+!*/src/test/build/
+
+# Local configuration
+local.properties
+gradle.properties
+
+# IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Firebase
+google-services.json
+
+# Keystore
+*.jks
+*.keystore
+
+# Logs
+*.log
+
+# Temp
+*.tmp
+*.temp
+
+# Docs site
+docs/assets/images/*.png
+docs/assets/images/*.jpg
