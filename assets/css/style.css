@@ -113,7 +113,7 @@ button {
 .nav__list {
   display: flex;
   align-items: center;
-  gap: 32px;
+  gap: 34px;
 }
 
 .nav__link {
@@ -339,7 +339,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 25px 50px -12px rgba(59, 130, 246, 0.25);
+  box-shadow: 0 25px 50 -12px rgba(59, 130, 246, 0.25);
 }
 
 .avatar__initials {
@@ -434,11 +434,6 @@ button {
 
 .contact__list li {
   color: #4b5563;
-}
-
-.contact__list a {
-  color: #3b82f6;
-  font-weight: 500;
 }
 
 /* ===== Form ===== */

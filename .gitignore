@@ -35,6 +35,7 @@ google-services.json
 *.tmp
 *.temp
 
-# Docs site
-docs/assets/images/*.png
-docs/assets/images/*.jpg
+# Website assets (keep source, ignore generated)
+*.psd
+*.sketch
+*.fig

@@ -2,14 +2,13 @@
   'use strict';
 
   // ===== Header scroll effect =====
-  const header = document.querySelector('.header');
-  const toggleClass = 'scrolled';
+  var header = document.querySelector('.header');
 
-  const onScroll = function () {
+  var onScroll = function () {
     if (window.scrollY > 50) {
-      header.classList.add(toggleClass);
+      header.classList.add('scrolled');
     } else {
-      header.classList.remove(toggleClass);
+      header.classList.remove('scrolled');
     }
   };
 
@@ -17,10 +16,10 @@
   onScroll();
 
   // ===== Back to top button =====
-  const backToTop = document.getElementById('back-to-top');
+  var backToTop = document.getElementById('back-to-top');
 
   if (backToTop) {
-    const toggleBackToTop = function () {
+    var toggleBackToTop = function () {
       if (window.scrollY > 300) {
         backToTop.classList.add('visible');
       } else {
@@ -39,8 +38,8 @@
   }
 
   // ===== Mobile navigation toggle =====
-  const navToggle = document.getElementById('nav-toggle');
-  const navList = document.querySelector('.nav__list');
+  var navToggle = document.getElementById('nav-toggle');
+  var navList = document.querySelector('.nav__list');
 
   if (navToggle && navList) {
     navToggle.addEventListener('click', function () {
@@ -49,7 +48,7 @@
     });
 
     // Close nav when clicking a link
-    const navLinks = document.querySelectorAll('.nav__link');
+    var navLinks = document.querySelectorAll('.nav__link');
     navLinks.forEach(function (link) {
       link.addEventListener('click', function () {
         navToggle.classList.remove('active');
@@ -59,12 +58,12 @@
   }
 
   // ===== Smooth scrolling for anchor links =====
-  const anchorLinks = document.querySelectorAll('a[href^="#"]');
+  var anchorLinks = document.querySelectorAll('a[href^="#"]');
 
   anchorLinks.forEach(function (link) {
     link.addEventListener('click', function (e) {
       e.preventDefault();
-      const target = document.querySelector(this.getAttribute('href'));
+      var target = document.querySelector(this.getAttribute('href'));
       if (target) {
         target.scrollIntoView({
           behavior: 'smooth'
@@ -74,7 +73,7 @@
   });
 
   // ===== Form submission (demo) =====
-  const contactForm = document.getElementById('contact-form');
+  var contactForm = document.getElementById('contact-form');
 
   if (contactForm) {
     contactForm.addEventListener('submit', function (e) {
