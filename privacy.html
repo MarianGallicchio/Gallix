@@ -84,46 +84,53 @@
     <main>
         <div class="privacy-container">
             <h1>Política de Privacidad</h1>
+            <p><em>Última actualización: Agosto 2026</em></p>
 
-            <h2>1. Protección de Datos de un Vistazo</h2>
+            <h2>1. RutaFacil: resumen</h2>
+            <p>RutaFacil es una aplicación para conductores de apps de viajes. Lee las ofertas visibles en la pantalla del teléfono (precio, distancia y tiempo) y calcula su rentabilidad neta en tiempo real, mostrando la información en un panel flotante.</p>
+            <p><strong>Principio fundamental: todo el procesamiento de datos es local, en el dispositivo del usuario.</strong> RutaFacil no recolecta, no almacena en servidores ni comparte datos personales con terceros.</p>
 
-            <h3>Información General</h3>
-            <p>Las siguientes notas proporcionan un resumen sencillo sobre qué ocurre con sus datos personales cuando visita este sitio web. Los datos personales son cualquier información con la que usted pueda ser identificado personalmente. Encontrará información detallada sobre el tema de la protección de datos en la política de privacidad que figura a continuación.</p>
+            <h2>2. Servicios de Accesibilidad (BIND_ACCESSIBILITY_SERVICE)</h2>
+            <h3>Qué hace</h3>
+            <p>RutaFacil utiliza la API de Servicios de Accesibilidad de Android, únicamente cuando el usuario la activa y acepta el aviso de divulgación que se muestra dentro de la aplicación, para:</p>
+            <ul>
+                <li>Detectar las ofertas de viaje visibles en la pantalla de aplicaciones de transporte (por ejemplo Uber Driver, DiDi y Cabify), leyendo el precio, la distancia y el tiempo de viaje.</li>
+                <li>Leer la pantalla (incluidas capturas procesadas en el momento, sin guardarse) cuando la app de transporte no expone esa información a través de su interfaz accesible, para extraer los mismos datos de la oferta.</li>
+                <li>Si el usuario activa la función "auto-rechazo" (Pro), realizar un toque automático en el botón de rechazo de una oferta no rentable. Solo se ejecuta si el usuario la habilita explícitamente.</li>
+            </ul>
+            <h3>Qué datos se obtienen y qué se hace con ellos</h3>
+            <p>Los datos obtenidos (precio, distancia, tiempo y cálculos de rentabilidad) se procesan y almacenan exclusivamente de forma local en el dispositivo. No se transmiten a servidores, no se comparten con terceros y no se utilizan para publicidad.</p>
+            <p>El acceso se limita a las aplicaciones de transporte ya enumeradas. RutaFacil no lee contenido de otras aplicaciones ni datos personales del usuario (contactos, mensajes, correos, etc.).</p>
+            <h3>Consentimiento y revocación</h3>
+            <p>Antes de activar el servicio, la aplicación muestra un aviso de divulgación dentro de la app que explica este uso y solicita el consentimiento explícito del usuario. El permiso puede revocarse en cualquier momento tocando "DETENER ASISTENTE" en la app o desactivando el servicio en los Ajustes de accesibilidad del teléfono.</p>
 
-            <h3>Recolección de Datos en este Sitio Web</h3>
-            <p><strong>¿Quién es responsable de la recolección de datos en este sitio web?</strong><br>
-            El procesamiento de datos en este sitio web es llevado a cabo por el operador del sitio. Puede encontrar los datos de contacto en la sección "Información sobre el Responsable de la Base de Datos" en esta política de privacidad.</p>
+            <h2>3. Superposición (SYSTEM_ALERT_WINDOW)</h2>
+            <p>RutaFacil muestra un panel flotante sobre otras aplicaciones para informar la rentabilidad de las ofertas en tiempo real. Solo se muestra cuando el servicio está activado, no interfiere con la navegación de otras apps y el permiso puede revocarse desde los Ajustes del dispositivo.</p>
 
-            <p><strong>¿Cómo se recolectan sus datos?</strong><br>
-            Sus datos son recolectados, por un lado, cuando usted nos los proporcione. Esto puede ser, por ejemplo, datos que ingrese en un formulario de contacto o envíe por correo electrónico.<br>
-            Otros datos son recolectados automáticamente por nuestros sistemas informáticos, o tras su consentimiento, al visitar el sitio web. Se trata principalmente de datos técnicos (ej. navegador de internet, sistema operativo o la hora de la visita). Estos datos se recolectan automáticamente tan pronto como ingresa a este sitio web.</p>
+            <h2>4. Datos almacenados localmente</h2>
+            <ul>
+                <li>Historial de ofertas detectadas y estadísticas de rentabilidad.</li>
+                <li>Preferencias de configuración (costos, metas y umbrales de rentabilidad).</li>
+                <li>Estado del consentimiento otorgado para el uso de la accesibilidad.</li>
+            </ul>
+            <p>Estos datos permanecen en el dispositivo y se eliminan al desinstalar la aplicación. Al cambiar de dispositivo o reinstalar la app, es responsabilidad del usuario asegurar sus datos.</p>
 
-            <p><strong>¿Para qué se utilizan sus datos?</strong><br>
-            Parte de los datos se recolecta para garantizar el funcionamiento sin errores del sitio web. Otros datos pueden ser utilizados para analizar su comportamiento como usuario. Si se pueden concluir o iniciar contratos a través del sitio web, los datos transmitidos también se procesarán para ofertas de contratos, pedidos u otras consultas.</p>
+            <h2>5. Permiso de Internet</h2>
+            <p>RutaFacil usa conexión a Internet únicamente para descargar un archivo de configuración de selectores (JSON) desde una URL controlada por el desarrollador, con el fin de adaptar la detección de ofertas cuando las apps de transporte cambian su interfaz. Ese archivo no contiene datos personales y la aplicación no envía datos a ningún servidor.</p>
 
-            <p><strong>¿Qué derechos tiene sobre sus datos?</strong><br>
-            Usted tiene derecho a solicitar de forma gratuita el acceso, rectificación, actualización o supresión de sus datos personales almacenados en cualquier momento, conforme a lo establecido en la Ley N° 25.326. Si ha dado su consentimiento para el procesamiento de datos, puede revocarlo en cualquier momento para el futuro. Además, tiene derecho a presentar un reclamo ante la autoridad de control competente.</p>
+            <h2>6. Compras dentro de la app (Google Play Billing)</h2>
+            <p>Las funciones Pro (pases y suscripción mensual) se procesan con los servicios oficiales de Google Play Billing. RutaFacil no recibe ni almacena datos de pago. El estado de la compra (vigencia de pase o suscripción) se guarda localmente en el dispositivo.</p>
 
-            <h2>2. Alojamiento (Hosting)</h2>
+            <h2>7. Ubicación, análisis y publicidad</h2>
+            <p>RutaFacil no solicita ni utiliza datos de ubicación, no incluye SDK de análisis de terceros ni publicidad, y no comparte datos con redes publicitarias.</p>
 
-            <h3>GitHub Pages</h3>
-            <p>El contenido de este sitio web está alojado a través del servicio GitHub Pages, proporcionado por:<br>
-            <strong>GitHub, Inc.</strong>, 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, Estados Unidos (en adelante, "GitHub").</p>
+            <h2>8. Este sitio web</h2>
+            <p>Este sitio web está alojado en <strong>GitHub Pages</strong> (GitHub, Inc., San Francisco, EE.UU.). Al visitarlo, GitHub puede recolectar información técnica (por ejemplo, su dirección IP) con fines de seguridad y funcionamiento del servicio, conforme a la política de privacidad de GitHub. El sitio también utiliza almacenamiento local del navegador para configuraciones funcionales y anónimas; estos datos permanecen en su dispositivo.</p>
 
-            <p>Cuando visita este sitio web, GitHub puede recolectar cierta información técnica, como su dirección IP, para fines de seguridad y funcionamiento del servicio. Puede encontrar más detalles sobre cómo GitHub procesa y protege la información en su política de privacidad: <a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement" target="_blank">https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement</a>.</p>
+            <h2>9. Derechos del titular de los datos</h2>
+            <p>Usted tiene derecho a solicitar el acceso, la rectificación, la actualización o la supresión de sus datos personales (Ley N° 25.326 y reglamentación de la Agencia de Acceso a la Información Pública) escribiendo al correo indicado en la sección 10. Si otorgó su consentimiento, puede revocarlo en cualquier momento.</p>
 
-            <p>El uso de GitHub se basa en nuestro interés legítimo de presentar nuestro sitio web de la manera más segura, rápida y confiable posible.</p>
-
-            <h2>3. Información General y Obligatoria</h2>
-
-            <h3>Protección de Datos</h3>
-            <p>El operador de estas páginas se toma muy en serio la protección de sus datos personales. Tratamos sus datos personales de forma confidencial y de acuerdo con la Ley N° 25.326 de Protección de los Datos Personales de la República Argentina y esta política de privacidad.</p>
-
-            <p>Le recordamos que la transmisión de datos en Internet (por ejemplo, en la comunicación por correo electrónico) puede presentar brechas de seguridad. No es posible garantizar una protección absoluta de los datos contra el acceso de terceros.</p>
-
-            <h3>Información sobre el Responsable de la Base de Datos</h3>
-            <p>El responsable del procesamiento de datos en este sitio web es:</p>
-
+            <h2>10. Responsable y contacto</h2>
             <div class="contact-info">
                 <ul>
                     <li><strong>Nombre / Empresa:</strong> Mariano Agustín Gallicchio / Gallix</li>
@@ -131,63 +138,6 @@
                     <li><strong>DNI:</strong> 20395151658</li>
                     <li><strong>Teléfono:</strong> 1126730077</li>
                     <li><strong>Correo Electrónico:</strong> <a href="mailto:marianoagusting1996@gmail.com">marianoagusting1996@gmail.com</a></li>
-                </ul>
-            </div>
-
-            <p>El responsable es la persona física o jurídica que, sola o conjuntamente con otras, decide sobre los fines y medios del tratamiento de los datos personales.</p>
-
-            <h3>Duración del Almacenamiento</h3>
-            <p>A menos que se haya especificado un período de almacenamiento más concreto en esta política de privacidad, sus datos personales permanecerán con nosotros hasta que deje de aplicar el propósito para su procesamiento. Si usted hace valer una solicitud justificada de supresión o revoca su consentimiento, sus datos serán eliminados, a menos que existan otras razones legalmente permisibles o exigibles para conservarlos.</p>
-
-            <h3>Base Legal para el Procesamiento de Datos</h3>
-            <p>El tratamiento de datos se realiza con el consentimiento libre, expreso e informado del titular (Art. 5, Ley 25.326). Asimismo, procesamos sus datos si es necesario para el cumplimiento de un contrato o para la implementación de medidas precontractuales. Las transferencias internacionales de datos (por ejemplo, a servidores en el exterior como los de GitHub) se realizan bajo niveles de protección adecuados o con su consentimiento explícito.</p>
-
-            <h3>Derechos del Titular de los Datos</h3>
-            <ul>
-                <li><strong>Revocación del consentimiento:</strong> Puedes revocar el consentimiento ya otorgado en cualquier momento.</li>
-                <li><strong>Derecho de acceso, rectificación, actualización y supresión:</strong> Usted tiene derecho a acceder en forma gratuita a sus datos personales en intervalos no inferiores a seis meses (Art. 14, Ley 25.326). Asimismo, tiene derecho a solicitar la rectificación, actualización o supresión de sus datos (Art. 16, Ley 25.326).</li>
-                <li><strong>Derecho de denuncia:</strong> Se le informa que la <strong>Agencia de Acceso a la Información Pública (AAIP)</strong>, en su carácter de Órgano de Control de la Ley N° 25.326, tiene la atribución de atender las denuncias y reclamos que se interpongan con relación al incumplimiento de las normas sobre protección de datos personales.</li>
-            </ul>
-
-            <h2>4. Recolección de Datos en este Sitio Web</h2>
-
-            <h3>Almacenamiento Local (Local Storage)</h3>
-            <p>Este sitio web utiliza el llamado "Local Storage" de su navegador para almacenar ciertas configuraciones localmente en su dispositivo. Esto sirve para mejorar su experiencia de usuario asegurando que las configuraciones seleccionadas (ej. idioma o modo de diseño) se conserven en futuras visitas.</p>
-            <p>Los datos almacenados permanecen en su dispositivo hasta que los elimine manualmente o su navegador lo haga de forma automática. Estos datos no se transfieren a nuestros servidores ni a terceros y son de carácter puramente funcional y anónimo.</p>
-
-            <h3>Archivos de Registro del Servidor (Server Log Files)</h3>
-            <p>El proveedor de las páginas recopila y almacena automáticamente información en archivos de registro del servidor, que su navegador transmite. Estos incluyen: Tipo y versión del navegador, Sistema operativo, URL de referencia, Nombre del host del ordenador de acceso, Hora de la solicitud del servidor y Dirección IP. Estos datos no se combinan con otras fuentes de datos.</p>
-
-            <h3>Contacto por Correo Electrónico o Teléfono</h3>
-            <p>Si se comunica con nosotros por correo electrónico o teléfono, su solicitud, incluyendo todos los datos personales resultantes (nombre, motivo de la consulta), será almacenada y procesada con el fin de gestionar su solicitud. No compartimos estos datos sin su consentimiento.</p>
-
-            <h2>5. Aplicaciones Móviles</h2>
-
-            <h3>RutaFacil</h3>
-            <p>La aplicación móvil RutaFacil, desarrollada por Gallix, puede requerir acceso a los datos de ubicación de su dispositivo para proporcionar sus servicios de cálculo de rutas y optimización de trayectos. Esta información se utiliza exclusivamente para mostrar su posición en el mapa, calcular distancias y brindarle las mejores opciones de ruta.</p>
-            <p>Los datos de ubicación se procesan de acuerdo con los permisos que usted otorgue en su sistema operativo y, dependiendo de su configuración, pueden recopilarse solo mientras la aplicación está en uso.</p>
-            <p>La información sobre sus rutas frecuentes, direcciones guardadas y preferencias de viaje se almacena de forma local en su dispositivo para facilitar un acceso rápido y mejorar su experiencia de usuario. No compartimos su historial de rutas con terceros con fines publicitarios.</p>
-
-            <h3>Análisis y Mejoras Técnicas</h3>
-            <p>Con el fin de solucionar posibles errores y asegurar el buen funcionamiento de RutaFacil, podemos recopilar datos técnicos anónimos sobre el rendimiento de la app y el modelo de su dispositivo. Esta información se procesa sin referencia personal directa y sirve únicamente para mantener la calidad del servicio.</p>
-
-            <h2>6. Terceros y Servicios Externos</h2>
-
-            <h3>Tiendas de Aplicaciones (Google Play Store & Apple App Store)</h3>
-            <p>La descarga de las aplicaciones de Gallix se realiza a través de plataformas de terceros. En este proceso, se transfieren datos a la respectiva tienda de aplicaciones. No tenemos influencia sobre esta recolección de datos.</p>
-
-            <h3>Compras In-App y Suscripciones (RevenueCat)</h3>
-            <p>Para procesar compras y suscripciones dentro de la aplicación RutaFacil, utilizamos el servicio RevenueCat (RevenueCat, Inc., EE.UU.). RevenueCat no procesa datos personales que lo identifiquen directamente, sino que solo recibe recibos anonimizados de la tienda de aplicaciones y un ID de usuario generado aleatoriamente.</p>
-
-            <h2>7. Cambios a esta Política de Privacidad</h2>
-            <p>Nos reservamos el derecho de modificar esta política de privacidad en cualquier momento. Cualquier cambio será publicado en esta página con una fecha de actualización revisada.</p>
-
-            <h2>8. Contacto</h2>
-            <p>Si tiene preguntas sobre esta política de privacidad, puede contactarme:</p>
-            <div class="contact-info">
-                <ul>
-                    <li><strong>Email:</strong> <a href="mailto:marianoagusting1996@gmail.com">marianoagusting1996@gmail.com</a></li>
-                    <li><strong>Teléfono:</strong> 1126730077</li>
                 </ul>
             </div>
 
